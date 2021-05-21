@@ -1,0 +1,164 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# By default, fastlane will send which actions are used
+# No personal data is shared, more information on https://github.com/fastlane/enhancer
+# Uncomment the following line to opt out
+opt_out_usage
+
+# If you want to automatically update fastlane if a new version is available:
+update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "1.53.0"
+
+# Set Deliver to use DAV to prevent "Unable to find content provider for username" failure
+ENV["DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS"] = "-t DAV"
+
+default_platform :ios
+
+platform :ios do
+  # Internal lane to pre build the app
+  private_lane :prebuild do
+    clear_derived_data
+    cocoapods
+  end
+
+  private_lane :build do
+    build_app(
+      clean: true,
+      output_directory: "./fastlane/Brands/" + ENV["BRAND_FOLDER"] + "/builds",
+      scheme: ENV["SCHEME"],
+      export_method: "app-store",
+      configuration: "Release",
+      export_options: {
+        provisioningProfiles: {
+          ENV["APP_IDENTIFIER"] => ENV["APP_MATCH_PROFILE"],
+          ENV["APP_INTENT_IDENTIFIER"] => ENV["APP_INTENT_MATCH_PROFILE"]
+        }
+      },
+      skip_profile_detection: true
+    )
+  end
+
+  private_lane :upload_beta do
+    upload_to_testflight(
+      app_identifier: ENV["APP_IDENTIFIER"],
+      username: ENV["ITC_USERNAME"],
+      team_name: ENV["TEAM_NAME"],
+      skip_submission: true,
+      skip_waiting_for_build_processing: true
+    )
+  end
+
+  private_lane :sync_certs do |options|
+    sync_code_signing(
+      app_identifier: [
+        ENV["APP_IDENTIFIER"],
+        ENV["APP_INTENT_IDENTIFIER"]
+      ],
+      type: options[:type],
+      force_for_new_devices: true,
+      team_name: ENV["TEAM_NAME"],
+    )
+  end
+
+  desc "Upload beta to Testflight"
+  lane :beta do
+    prebuild
+    sync_appstore_certs
+    build
+    upload_beta
+    slack(
+      message: ENV["APP_NAME"] + " version: " + sh("git describe --abbrev=0") + " uploaded to Appstore Connect",
+    )
+  end
+
+  desc "Create Screenshots without uploading"
+  lane :screenshot do
+    cocoapods
+    capture_screenshots
+  end
+
+  desc "Upload Screenshots to the iTunes Connect store"
+  lane :upload_screenshots do
+    screenshot
+    deliver(
+      skip_metadata: true
+    )
+  end
+
+  desc "Synchronize DEVELOPMENT certificates with iTunes Connect"
+  lane :sync_development_certs do
+    sync_certs(type: "development")
+  end
+
+  desc "Synchronize ADHOC certificates with iTunes Connect"
+  lane :sync_adhoc_certs do
+    sync_certs(type: "adhoc")
+  end
+
+  desc "Synchronize APPSTORE certificates with iTunes Connect"
+  lane :sync_appstore_certs do
+    sync_certs(type: "appstore")
+  end
+
+  desc "Synchronize ALL certificates with iTunes Connect"
+  lane :sync_all_certs do
+    sync_development_certs
+    sync_adhoc_certs
+    sync_appstore_certs
+  end
+
+  desc "Generate a new APP ID in iTunes Connect"
+  lane :create_new_app do
+      produce(
+        username: ENV["ITC_USERNAME"],
+        team_name: ENV["TEAM_NAME"],
+        app_identifier: ENV["APP_IDENTIFIER"],
+        app_name: ENV["APP_NAME"],
+        company_name: ENV["TEAM_NAME"],
+        language: 'Dutch'
+      )
+    end
+
+  lane :add_device do
+    device_name = prompt(text: "Enter the device name: ")
+    device_udid = prompt(text: "Enter the device UDID: ")
+    device_hash = {}
+    device_hash[device_name] = device_udid
+    register_devices(
+        username: ENV["ITC_USERNAME"],
+        team_name: ENV["TEAM_NAME"],
+        devices: device_hash,
+    )
+    sync_development_certs
+    sync_appstore_certs
+  end
+  
+  lane :refresh_dsyms do              # for vialer run on console: fastlane refresh_dsyms --env vialer
+      download_dsyms(                 # Download dSYM files from iTunnesConnect
+         username: ENV["ITC_USERNAME"],
+         team_name: ENV["TEAM_NAME"],
+         app_identifier: ENV["APP_IDENTIFIER"]
+      )
+      upload_symbols_to_crashlytics   # Upload them to Crashlytics
+      clean_build_artifacts           # Delete the local dSYM files
+  end
+  
+  desc "Run all the UITests on the terminal like this for example: bundle exec Fastlane --env voys tests"
+  lane :tests do
+      run_tests(scheme: ENV["SCHEME"])
+  end
+
+  after_all do |lane|
+    clean_build_artifacts()
+  end
+
+end

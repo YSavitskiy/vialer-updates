@@ -1,0 +1,14 @@
+//
+//  Vialer-Prefix.pch
+//  Copyright © 2016 VoIPGRID. All rights reserved.
+//
+
+#ifndef Vialer_Prefix_pch
+#define Vialer_Prefix_pch
+
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import "VialerLogger.h"
+
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+
+#endif

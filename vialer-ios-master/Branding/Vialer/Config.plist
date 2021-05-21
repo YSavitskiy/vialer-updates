@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Log Entries</key>
+	<dict>
+		<key>Main</key>
+		<string>b47d8d63-d150-4c4c-afa9-9a6ed66441af</string>
+		<key>Push Notifications</key>
+		<string>07c8e655-a758-4590-aafe-682627d50904</string>
+	</dict>
+	<key>GA Custom Dimensions</key>
+	<dict>
+		<key>Build index</key>
+		<integer>2</integer>
+		<key>Client ID index</key>
+		<integer>1</integer>
+	</dict>
+	<key>Primary colors</key>
+	<dict>
+		<key>PrimaryBrandColor</key>
+		<array>
+			<integer>232</integer>
+			<integer>126</integer>
+			<integer>58</integer>
+		</array>
+		<key>SecondaryBrandColor</key>
+		<array>
+			<integer>241</integer>
+			<integer>90</integer>
+			<integer>41</integer>
+		</array>
+		<key>BlackColor</key>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<key>WhiteColor</key>
+		<array>
+			<integer>255</integer>
+			<integer>255</integer>
+			<integer>255</integer>
+		</array>
+		<key>AppleDefaultOffWhite</key>
+		<array>
+			<integer>247</integer>
+			<integer>247</integer>
+			<integer>247</integer>
+		</array>
+		<key>WhiteColorWith05Alpha</key>
+		<array>
+			<integer>255</integer>
+			<integer>255</integer>
+			<integer>255</integer>
+			<real>0.5</real>
+		</array>
+	</dict>
+	<key>Tint colors</key>
+	<dict>
+		<key>BackgroundGradientStartColor</key>
+		<array>
+			<integer>255</integer>
+			<integer>141</integer>
+			<integer>7</integer>
+		</array>
+		<key>BackgroundGradientEndColor</key>
+		<array>
+			<integer>255</integer>
+			<integer>116</integer>
+			<integer>47</integer>
+		</array>
+		<key>NumberPadButtonPressedColor</key>
+		<string>WhiteColor</string>
+		<key>LogInViewControllerButtonBorderColor</key>
+		<string>WhiteColor</string>
+		<key>LogInViewControllerButtonBackgroundColorForPressedState</key>
+		<string>WhiteColorWith05Alpha</string>
+		<key>ActivateSIPAccountViewControllerButtonBorderColor</key>
+		<string>WhiteColor</string>
+		<key>ActivateSIPAccountViewControllerButtonBackgroundColorForPressedState</key>
+		<string>WhiteColorWith05Alpha</string>
+		<key>NumberPadButtonTextColor</key>
+		<string>WhiteColor</string>
+		<key>TabBarBackgroundColor</key>
+		<string>AppleDefaultOffWhite</string>
+		<key>TabBarTintColor</key>
+		<string>PrimaryBrandColor</string>
+		<key>NavigationBarTintColor</key>
+		<string>PrimaryBrandColor</string>
+		<key>ContactsTableSectionIndexColor</key>
+		<string>PrimaryBrandColor</string>
+		<key>RecentsSegmentedControlTintColor</key>
+		<string>PrimaryBrandColor</string>
+		<key>SideMenuTintColor</key>
+		<string>PrimaryBrandColor</string>
+		<key>SideMenuButtonPressedState</key>
+		<string>AppleDefaultOffWhite</string>
+		<key>NavigationBarBarTintColor</key>
+		<string>AppleDefaultOffWhite</string>
+		<key>SideMenuHeaderBackgroundColor</key>
+		<string>AppleDefaultOffWhite</string>
+		<key>AvailabilityTableViewTintColor</key>
+		<string>PrimaryBrandColor</string>
+		<key>RecentsTableViewTintColor</key>
+		<string>PrimaryBrandColor</string>
+		<key>ContactSearchBarTintColor</key>
+		<string>PrimaryBrandColor</string>
+		<key>ContactSearchBarBarTintColor</key>
+		<string>PrimaryBrandColor</string>
+		<key>LeftDrawerButtonTintColor</key>
+		<string>PrimaryBrandColor</string>
+		<key>RecentsFilterControlTintColor</key>
+		<string>PrimaryBrandColor</string>
+		<key>TwoStepScreenInfoBarBackgroundColor</key>
+		<array>
+			<integer>229</integer>
+			<integer>229</integer>
+			<integer>229</integer>
+		</array>
+		<key>TwoStepScreenVialerIconColor</key>
+		<string>SecondaryBrandColor</string>
+		<key>TwoStepScreenBubblingColor</key>
+		<array>
+			<integer>61</integer>
+			<integer>65</integer>
+			<integer>84</integer>
+		</array>
+		<key>TwoStepScreenSideAIconColor</key>
+		<array>
+			<integer>61</integer>
+			<integer>65</integer>
+			<integer>84</integer>
+		</array>
+		<key>TwoStepScreenSideBIconColor</key>
+		<string>SecondaryBrandColor</string>
+		<key>TwoStepScreenBackgroundHeaderColor</key>
+		<string>SecondaryBrandColor</string>
+		<key>ReachabilityBarBackgroundColor</key>
+		<array>
+			<integer>178</integer>
+			<integer>177</integer>
+			<integer>184</integer>
+		</array>
+	</dict>
+	<key>URLS</key>
+	<dict>
+		<key>Stun Servers</key>
+		<array>
+			<string>stun.voipgrid.nl</string>
+		</array>
+		<key>Encrypted SIP Domain</key>
+		<string>sip.encryptedsip.com</string>
+		<key>Middleware BaseLink</key>
+		<string>https://vialerpush.voipgrid.nl</string>
+		<key>API</key>
+		<string>https://partner.voipgrid.nl/api</string>
+		<key>Partner</key>
+		<string>https://partner.voipgrid.nl/</string>
+		<key>SIP domain</key>
+		<string>sipproxy.voipgrid.nl</string>
+		<key>onboarding-nl</key>
+		<string>https://vialerapp.com/nl/app-info/</string>
+		<key>onboarding-en</key>
+		<string>https://vialerapp.com/app-info/</string>
+	</dict>
+</dict>
+</plist>

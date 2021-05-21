@@ -1,0 +1,24 @@
+
+/* Class = "UIViewController"; title = "Recents"; ObjectID = "0f0-Ph-M40"; */
+"0f0-Ph-M40.title" = "Recent";
+
+/* Class = "UILabel"; text = "Cell With Error Text"; ObjectID = "g0W-t5-b0b"; */
+"g0W-t5-b0b.text" = "Cell With Error Text";
+
+/* Class = "UISegmentedControl"; rDx-8g-SbK.segmentTitles[0] = "All"; ObjectID = "rDx-8g-SbK"; */
+"rDx-8g-SbK.segmentTitles[0]" = "Alles";
+
+/* Class = "UISegmentedControl"; rDx-8g-SbK.segmentTitles[1] = "Mine"; ObjectID = "rDx-8g-SbK"; */
+"rDx-8g-SbK.segmentTitles[1]" = "Mijn";
+
+/* Class = "UILabel"; text = "date"; ObjectID = "8Jg-mD-iX2"; */
+"8Jg-mD-iX2.text" = "";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "PRa-sg-NzP"; */
+"PRa-sg-NzP.text" = "";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "bHO-4g-VGn"; */
+"bHO-4g-VGn.text" = "";
+
+/* Class = "UILabel"; text = "Only show missed calls"; ObjectID = "kOo-ij-9EJ"; */
+"kOo-ij-9EJ.text" = "Toon enkel gemiste oproepen";

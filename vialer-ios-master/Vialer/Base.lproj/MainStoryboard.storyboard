@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BQ4-be-ZGE">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vailer Root View Controller-->
+        <scene sceneID="izF-lz-8HD">
+            <objects>
+                <viewController id="BQ4-be-ZGE" customClass="VailerRootViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bti-2h-Pg1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1DY-ie-kRe" userLabel="BackgroundViewWithLogo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIb-rP-QDN" userLabel="BackgroundSolidColorView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Km0-zp-Jub" userLabel="BackgroundGradientView" customClass="GradientView" customModule="ANNAbel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vialer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="vaX-QE-6Dz">
+                                        <rect key="frame" x="0.0" y="332" width="414" height="72"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Km0-zp-Jub" firstAttribute="top" secondItem="1DY-ie-kRe" secondAttribute="top" id="0Ii-Ct-TvG"/>
+                                    <constraint firstItem="vIb-rP-QDN" firstAttribute="top" secondItem="1DY-ie-kRe" secondAttribute="top" id="2TK-aF-5cw"/>
+                                    <constraint firstItem="vaX-QE-6Dz" firstAttribute="leading" secondItem="Km0-zp-Jub" secondAttribute="leading" id="7na-Ec-iNt"/>
+                                    <constraint firstItem="vaX-QE-6Dz" firstAttribute="centerY" secondItem="1DY-ie-kRe" secondAttribute="centerY" id="I2m-a4-37R"/>
+                                    <constraint firstAttribute="bottom" secondItem="vIb-rP-QDN" secondAttribute="bottom" id="OaS-eA-YXa"/>
+                                    <constraint firstItem="vaX-QE-6Dz" firstAttribute="trailing" secondItem="vIb-rP-QDN" secondAttribute="trailing" id="QRG-a3-I4r"/>
+                                    <constraint firstAttribute="trailing" secondItem="vIb-rP-QDN" secondAttribute="trailing" id="d6k-by-ORF"/>
+                                    <constraint firstAttribute="bottom" secondItem="Km0-zp-Jub" secondAttribute="bottom" id="jzF-Jn-dMm"/>
+                                    <constraint firstItem="Km0-zp-Jub" firstAttribute="leading" secondItem="1DY-ie-kRe" secondAttribute="leading" id="nfQ-Ut-oAS"/>
+                                    <constraint firstItem="vIb-rP-QDN" firstAttribute="leading" secondItem="1DY-ie-kRe" secondAttribute="leading" id="v5f-qS-0zH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Km0-zp-Jub" secondAttribute="trailing" id="vL6-8J-Ejv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kwr-Zg-43A"/>
+                        <constraints>
+                            <constraint firstItem="1DY-ie-kRe" firstAttribute="top" secondItem="Bti-2h-Pg1" secondAttribute="top" id="16M-tT-1es"/>
+                            <constraint firstItem="Kwr-Zg-43A" firstAttribute="trailing" secondItem="1DY-ie-kRe" secondAttribute="trailing" id="7Z4-eE-fdC"/>
+                            <constraint firstAttribute="bottom" secondItem="1DY-ie-kRe" secondAttribute="bottom" id="PNn-Fl-IY1"/>
+                            <constraint firstItem="1DY-ie-kRe" firstAttribute="leading" secondItem="Kwr-Zg-43A" secondAttribute="leading" id="zIy-sG-KI7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundGrandientView" destination="Km0-zp-Jub" id="6Kh-La-gj5"/>
+                        <outlet property="backgroundSolidColorView" destination="vIb-rP-QDN" id="cJZ-iI-xvR"/>
+                        <segue destination="i10-iY-7zz" kind="presentation" identifier="ShowVialerDrawerViewSegue" customClass="NoAnimationSegue" modalPresentationStyle="fullScreen" id="jgD-42-JhD"/>
+                        <segue destination="ZYs-HX-JeK" kind="presentation" identifier="ShowSIPIncomingCallViewSegue" animates="NO" id="18T-Qb-NXM"/>
+                        <segue destination="OBw-wl-6xF" kind="unwind" identifier="goToVialerRootViewControllerIdentifier" unwindAction="goToVialerRootViewController:" id="Hm1-9D-gHw"/>
+                        <segue destination="gzv-u3-1Wl" kind="presentation" identifier="ShowSIPCallingViewSegue" animates="NO" id="tTg-fr-cKc"/>
+                        <segue destination="paX-8q-yxG" kind="presentation" identifier="ShowTwoStepCallingViewSegue" id="7O8-Bx-vjj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iot-wT-SKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="OBw-wl-6xF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2736.8000000000002" y="-585.1574212893554"/>
+        </scene>
+        <!--SIPIncomingCallStoryboard-->
+        <scene sceneID="tH0-5A-ya0">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SIPCallingStoryboard" storyboardName="SIPIncomingCallStoryboard" id="ZYs-HX-JeK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWk-19-EZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2737" y="-152"/>
+        </scene>
+        <!--SIPCallingStoryboard-->
+        <scene sceneID="gNz-03-MyW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SIPCallingStoryboard" id="gzv-u3-1Wl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XQr-z9-jcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3077" y="-152"/>
+        </scene>
+        <!--TwoStepCallingStoryboard-->
+        <scene sceneID="yXb-dx-33g">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TwoStepCallingStoryboard" id="paX-8q-yxG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVP-my-F1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2372" y="-152"/>
+        </scene>
+        <!--Vialer Drawer View Controller-->
+        <scene sceneID="Olp-zU-Nr0">
+            <objects>
+                <viewController storyboardIdentifier="VialerDrawerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i10-iY-7zz" customClass="VialerDrawerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mzC-cA-UBR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PVo-bT-P72"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="ALB-k4-yaR" kind="custom" identifier="mm_center" customClass="MMDrawerControllerSegue" id="tO0-Oo-pCK"/>
+                        <segue destination="ciJ-Ul-t4m" kind="custom" identifier="mm_left" customClass="MMDrawerControllerSegue" id="rYM-rH-MOq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oD8-kx-jiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3600" y="-584"/>
+        </scene>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="gWm-cd-SPB">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarIdentifier" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ALB-k4-yaR" customClass="MainTabBarViewController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="MpR-iT-2ec">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="7HG-I5-xKZ" kind="relationship" relationship="viewControllers" id="UJQ-lL-Wuc"/>
+                        <segue destination="iRw-Do-IKp" kind="relationship" relationship="viewControllers" id="Qfi-iz-4uN"/>
+                        <segue destination="05L-Wg-Fcr" kind="relationship" relationship="viewControllers" id="Tzc-rH-oQ9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySl-vq-9vu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4344" y="-187"/>
+        </scene>
+        <!--DialerStoryboard-->
+        <scene sceneID="7Gw-9Q-bJb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DialerStoryboard" id="7HG-I5-xKZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Keys" image="tab-keypad" selectedImage="tab-keypad-active" id="qlY-ML-87C"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MOG-2s-BfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4126.5" y="301"/>
+        </scene>
+        <!--ContactsStoryboard-->
+        <scene sceneID="zuy-hy-KEW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ContactsStoryboard" id="iRw-Do-IKp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contacts" image="tab-contact" selectedImage="tab-contact-active" id="hic-qE-fXK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b12-rL-OuG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4344.5" y="301"/>
+        </scene>
+        <!--RecentsStoryboard-->
+        <scene sceneID="g5I-by-bs7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RecentsStoryboard" id="05L-Wg-Fcr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recents" image="tab-recent" selectedImage="tab-recent-active" id="lmK-Bc-OZa"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVm-hC-IY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4561.5" y="301"/>
+        </scene>
+        <!--SideMenuStoryboard-->
+        <scene sceneID="Aca-e1-6Ll">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MenuIdentifier" storyboardName="SideMenuStoryboard" id="ciJ-Ul-t4m" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6RD-VT-oEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4344" y="-916"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab-contact" width="27" height="28"/>
+        <image name="tab-contact-active" width="27" height="28"/>
+        <image name="tab-keypad" width="24" height="24"/>
+        <image name="tab-keypad-active" width="24" height="24"/>
+        <image name="tab-recent" width="26" height="26"/>
+        <image name="tab-recent-active" width="26" height="26"/>
+        <image name="vialer-logo" width="293" height="72"/>
+    </resources>
+</document>

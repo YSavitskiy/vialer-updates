@@ -1,0 +1,526 @@
+/* Created with Localizable Strings Merge, the swiss-army knife for iOS and OS X localization. */
+
+/* No comment provided by engineer. */
+"%@ is configuring" = "%@ configureert";
+
+/* No comment provided by engineer. */
+"%@ is logged out." = "%@ is uitgelogd.";
+
+/* No comment provided by engineer. */
+"%@\nis currently logged in." = "%@\nis op dit moment ingelogd.";
+
+/* Accept */
+"Accept" = "Accepteer";
+
+/* Access to microphone denied */
+"Access to microphone denied" = "Toegang tot microfoon geweigerd";
+
+/* No comment provided by engineer. */
+"Add destination" = "Voeg eindbestemming toe";
+
+/* No comment provided by engineer. */
+"Application denied access to 'Contacts'" = "App heeft geen toegang tot 'Contacten'";
+
+/* No comment provided by engineer. */
+"Application not authorized to access 'Contacts'" = "App heeft geen toegangsrechten tot 'Contacten'";
+
+/* No comment provided by engineer. */
+"Are you sure you want to log out?" = "Weet je zeker dat je uit wilt loggen?";
+
+/* audio */
+"audio" = "audio";
+
+/* No comment provided by engineer. */
+"Back" = "Terug";
+
+/* No comment provided by engineer. */
+"Business" = "Zakelijke";
+
+/* No comment provided by engineer. */
+"Call canceled" = "Gesprek geannuleerd";
+
+/* Statuslabel state text .Disconnected */
+"Call ended" = "Gesprek beëindigd";
+
+/* Call has Ended, enable WiFi? */
+"Call has Ended, enable WiFi?" = "Gesprek is beëindigd, WiFi weer inschakelen?";
+
+/* No comment provided by engineer. */
+"Calling other party" = "Andere partij aan het bellen";
+
+/* No comment provided by engineer. */
+"Calling your phone" = "Je telefoon aan het bellen";
+
+/* Statuslabel state text .Calling */
+"Calling..." = "Bellen...";
+
+/* No comment provided by engineer. */
+"calls in the cloud" = "telefonie in de cloud";
+
+/* No comment provided by engineer. */
+"Cancel" = "Annuleer";
+
+/* Cancel call */
+"Cancel call" = "Annuleer gesprek";
+
+/* No comment provided by engineer. */
+"Checking VoIP account" = "VoIP account controleren";
+
+/* No comment provided by engineer. */
+"Connected with other party" = "Verbonden met andere partij";
+
+/* Statuslabel state text .Connecting */
+"Connecting..." = "Verbinden...";
+
+/* No comment provided by engineer. */
+"Contacts" = "Contacten";
+
+/* No comment provided by engineer. */
+"Continue" = "Verder";
+
+/* Continue calling */
+"Continue calling" = "Start gesprek";
+
+/* Could not load your recent calls */
+"Could not load your recent calls" = "Recente gesprekken konden niet worden opgehaald";
+
+/* No comment provided by engineer. */
+"Couldn't connect with other party" = "Kan niet verbinden met andere partij";
+
+/* No comment provided by engineer. */
+"Couldn't connect with your phone" = "Kan niet verbinden met je telefoon";
+
+/* Transfer failed */
+"Couldn't transfer call to" = "Kan niet doorverbinden naar";
+
+/* Decline */
+"Decline" = "Weiger";
+
+/* No comment provided by engineer. */
+"Declined call" = "Gesprek geweigerd";
+
+/* No comment provided by engineer. */
+"Dial plan" = "Belplan";
+
+/* No comment provided by engineer. */
+"Disabling VoIP..." = "VoIP aan het uitschakelen...";
+
+/* Disconnected phone state */
+"Disconnected" = "Beëindigd";
+
+/* No comment provided by engineer. */
+"Email address" = "E-mailadres";
+
+/* No comment provided by engineer. */
+"Email sent successfully." = "E-mail verzonden.";
+
+/* No comment provided by engineer. */
+"Enable TCP connection" = "Activeer TCP verbinding";
+
+/* No comment provided by engineer. */
+"Enable VoIP" = "Schakel VoIP in";
+
+/* No comment provided by engineer. */
+"Enable WiFi notification" = "Schakel WiFi notificatie in";
+
+/* Ending call... */
+"Ending call..." = "Gesprek aan het beëindigen...";
+
+/* No comment provided by engineer. */
+"Enter Your email address and password to login." = "Voer je e-mailadres en wachtwoord in om in te loggen.";
+
+/* No comment provided by engineer. */
+"Error" = "Fout";
+
+/* No comment provided by engineer. */
+"Error getting the availability options" = "Fout bij het ophalen van de bereikbaarheid opties";
+
+/* No comment provided by engineer. */
+"Error saving number" = "Fout bij het opslaan van het nummer";
+
+/* No comment provided by engineer. */
+"Error while retrieving your outgoing number, make sure you are connected to the internet." = "Fout tijdens het ophalen van je uitgaande nummer, zorg ervoor dat je verbonden bent met internet.";
+
+/* failed to load webpage with title */
+"Failed to load %@" = "%@ kon niet worden geladen";
+
+/* No comment provided by engineer. */
+"Failed to load VoIP settings." = "VoIP instellingen laden mislukt.";
+
+/* No comment provided by engineer. */
+"Failed to send email." = "E-mail zenden mislukt.";
+
+/* No comment provided by engineer. */
+"Failed to setup call" = "Opzetten van gesprek mislukt";
+
+/* Fetching the latest recent calls from the server. */
+"Fetching the latest recent calls from the server." = "Meest recente gesprekken worden van de server gehaald.";
+
+/* No comment provided by engineer. */
+"Forgot password?" = "Wachtwoord vergeten?";
+
+/* Give permission to use your microphone.\nGo to */
+"Give permission to use your microphone.\nGo to" = "Geef toestemming om de microfoon te gebruiken.\nGa naar";
+
+/* No comment provided by engineer. */
+"Hello" = "Hallo";
+
+/* No comment provided by engineer. */
+"How does %@ work?" = "Hoe werkt bellen via %@?";
+
+/* No comment provided by engineer. */
+"If your email address is %@ we will send you an email with instructions to reset your password." = "Als je emailadres %@ is, zullen we je een email sturen met instructies om je wachtwoord te resetten.";
+
+/* Incoming call */
+"Incoming call" = "Binnenkomend gesprek";
+
+/* Incoming call from: \(call.callerName) \(call.callerNumber) */
+"Incoming call from: \(call.callerName) \(call.callerNumber)" = "Inkomend gesprek van: \(call.callerName) \(call.callerNumber)";
+
+/* Statuslabel state text .Incoming */
+"Incoming call..." = "Inkomend gesprek...";
+
+/* No comment provided by engineer. */
+"Information" = "Informatie";
+
+/* No comment provided by engineer. */
+"Invalid number used to setup call" = "Foutief nummer gebruikt om gesprek op te zetten";
+
+/* It's not possible to setup a call. Make sure you have an internet connection. */
+"It's not possible to setup a call. Make sure you have an internet connection." = "Gesprek kan niet opgezet worden. Zorg voor een internet verbinding en probeer het opnieuw.";
+
+/* Keypad */
+"Keypad" = "Toetsen";
+
+/* No comment provided by engineer. */
+"Loading %@..." = "%@ laden...";
+
+/* No comment provided by engineer. */
+"Loading availability options..." = "Bezig met laden van de opties voor de bereikbaarheid...";
+
+/* No comment provided by engineer. */
+"Loading VoIP settings..." = "VoIP instellingen laden...";
+
+/* No comment provided by engineer. */
+"Log out" = "Uitloggen";
+
+/* No comment provided by engineer. */
+"Logging identifier" = "Identificatie nummer";
+
+/* No comment provided by engineer. */
+"Logging in..." = "Inloggen...";
+
+/* No comment provided by engineer. */
+"Login" = "Inloggen";
+
+/* No comment provided by engineer. */
+"Login failed" = "Inloggen mislukt";
+
+/* No comment provided by engineer. */
+"Microphone Access Denied" = "Geen toegang tot microfoon";
+
+/* No comment provided by engineer. */
+"Mobile" = "Mobiele telefoonnummer";
+
+/* No comment provided by engineer. */
+"Mobile phone number" = "Mobiele telefoonnummer";
+
+/* No comment provided by engineer. */
+"My number" = "Mijn nummer";
+
+/* No comment provided by engineer. */
+"My Number: " = "Mijn Nummer: ";
+
+/* No */
+"No" = "Nee";
+
+/* No Caller ID */
+"No Caller ID" = "Anoniem";
+
+/* No connection, cannot call. */
+"No connection, cannot call." = "Geen verbinding, bellen niet mogelijk.";
+
+/* No comment provided by engineer. */
+"No email address configured" = "Geen emailadres ingesteld";
+
+/* No internet connection */
+"No internet connection" = "Geen internet verbinding";
+
+/* No comment provided by engineer. */
+"No login data" = "Geen inloggegevens";
+
+/* No missed calls */
+"No missed calls" = "Geen gemiste gesprekken";
+
+/* No recent calls */
+"No recent calls" = "Geen recente gesprekken";
+
+/* Not allowed */
+"Not allowed" = "Niet toegestaan";
+
+/* Fetching recent calls failed */
+"Fetching recent calls failed" = "Ophalen recente gesprekken mislukt";
+
+/* No comment provided by engineer. */
+"Not available" = "Niet bereikbaar";
+
+/* No comment provided by engineer. */
+"Number saved" = "Nummer opgeslagen";
+
+/* Ok */
+"Ok" = "OK";
+
+/* No comment provided by engineer. */
+"On hold" = "In de wacht";
+
+/* No comment provided by engineer. */
+"Outgoing number" = "Uitgaand nummer";
+
+/* No comment provided by engineer. */
+"Password" = "Wachtwoord";
+
+/* No comment provided by engineer. */
+"Phone number incorrect" = "Telefoonnummer incorrect";
+
+/* No comment provided by engineer. */
+"Please enter a valid email address." = "Vul een geldig e-mailadres in.";
+
+/* No comment provided by engineer. */
+"Missing outgoing number" = "Uitgaand nummer ontbreekt";
+
+/* No comment provided by engineer. */
+"Please note that as you don\'t own an outgoing number, you may only call internal numbers" = "Vanwege het ontbreken van een uitgaand nummer kan je alleen interne nummers bellen";
+
+/* No comment provided by engineer. */
+"Please enter your e-mail address and we will send you instructions on setting a new password" = "Geef je e-mailadres op, dan sturen we de instructies voor het instellen van een nieuw wachtwoord.";
+
+/* No comment provided by engineer. */
+"Please enter your mobile number here." = "Voer hier je mobiele telefoonnummer in.";
+
+/* Poor connection, Two step calling enabled. */
+"Poor connection, Two step calling enabled." = "Slechte verbinding, Twee staps modus geactiveerd.";
+
+/* Recents */
+"Recents" = "Recent";
+
+/* No comment provided by engineer. */
+"Remote Logging" = "Remote Logging";
+
+/* No comment provided by engineer. */
+"Request password" = "Wachtwoord opvragen";
+
+/* No comment provided by engineer. */
+"Retrieving phone numbers..." = "Telefoonnummers ophalen...";
+
+/* No comment provided by engineer. */
+"Retry" = "Opnieuw proberen";
+
+/* No comment provided by engineer. */
+"Saving availability has failed" = "Opslaan bereikbaarheid mislukt";
+
+/* No comment provided by engineer. */
+"Saving availability..." = "Bereikbaarheid opslaan...";
+
+/* No comment provided by engineer. */
+"Saving number..." = "Nummer opslaan...";
+
+/* No comment provided by engineer. */
+"Send email?" = "E-mail versturen?";
+
+/* No comment provided by engineer. */
+"Sending email..." = "Versturen e-mail...";
+
+/* No comment provided by engineer. */
+"Set up call" = "Gesprek wordt opgezet";
+
+/* Settings */
+"Settings" = "Instellingen";
+
+/* No comment provided by engineer. */
+"Sorry!" = "Sorry!";
+
+/* speaker */
+"speaker" = "luidspreker";
+
+/* Start calling */
+"Start calling" = "Start gesprek";
+
+/* No comment provided by engineer. */
+"Statistics" = "Statistieken";
+
+/* Successfully connected with */
+"Successfully connected with" = "Succesvol verbonden met";
+
+/* The number is too short */
+"The number is too short" = "Het nummer is te kort";
+
+/* No comment provided by engineer. */
+"The outgoing number which the app will display is:" = "Het telefoonnummer waarmee wordt uitgebeld:";
+
+/* No comment provided by engineer. */
+"This user is not allowed to use the app" = "Dit account kan geen gebruik maken van de app";
+
+/* Tip: Disable WiFi for better audio */
+"Tip: Disable WiFi for better audio" = "Tip: Schakel WiFi uit voor betere audio";
+
+/* No comment provided by engineer. */
+"To make Two step calling possible, we need to have your mobile phone number." = "Om Twee stap bellen mogelijk te maken, hebben we je mobiele nummer nodig.";
+
+/* No comment provided by engineer. */
+"Search" = "Zoek";
+
+/* No comment provided by engineer. */
+"Top name matches" = "Meest overeenkomende namen";
+
+/* No comment provided by engineer. */
+"No results" = "Niets gevonden";
+
+/* Transfer in progress to */
+"Transfer in progress to" = "Doorverbinden opgezet met";
+
+/* Transfer requested for */
+"Transfer requested for" = "Doorverbinden aangevraagd voor";
+
+/* No comment provided by engineer. */
+"Two step call cancel failed" = "Twee staps gesprek annuleren mislukt";
+
+/* No comment provided by engineer. */
+"Two step call failed" = "Het twee staps gesprek is mislukt";
+
+/* Two step modus */
+"Two step modus" = "Twee staps modus";
+
+/* Only 4G is supported for VoIP telephony. In Two step modus the app calls your mobile number first and then connects you to the contact you chose. */
+"Only 4G is supported for VoIP telephony. In Two step modus the app calls your mobile number first and then connects you to the contact you chose." = "Alleen 4G wordt ondersteund voor VoIP. Het telefoniesysteem belt eerst jouw mobiele nummer en verbind je daarna vervolgens door met degene die je wilt bellen.";
+
+/* No comment provided by engineer. */
+"Unable to fetch availability" = "Niet mogelijk bereikbaarheid op te halen";
+
+/* No comment provided by engineer. */
+"Unable to load your VoIP settings. Please try again." = "Laden van VoIP instellingen mislukt. Probeer het opnieuw.";
+
+/* No comment provided by engineer. */
+"Unable to save the number, please update the number." = "Het is niet mogelijk om het nummer op te slaan, verander het nummer.";
+
+/* No comment provided by engineer. */
+"user type not allowed" = "gebruikers type niet toegestaan";
+
+/* No comment provided by engineer. */
+"VoIP account ID" = "VoIP-account ID";
+
+/* No comment provided by engineer. */
+"VoIP Disabled" = "VoIP Gedeactiveerd";
+
+/* VoIP disabled, enable in settings */
+"VoIP disabled, enable in settings" = "VoIP gedeactiveerd, activeer VoIP bij instellingen";
+
+/* With mobile internet (4G) you get a more stable connection and that should improve the audio quality.\n\n Disable Wifi? */
+"With mobile internet (4G) you get a more stable connection and that should improve the audio quality.\n\n To disable WiFi go to the Settings of your phone and disable WiFi." = "Met mobiel internet (4G) is de verbinding stabieler en daarmee de geluidskwaliteit hoger.\n\n Om WiFi uit te schakelen ga naar de Instellingen van je telefoon en schakel WiFi uit.";
+
+/* No comment provided by engineer. */
+"Yes" = "Ja";
+
+/* No comment provided by engineer. */
+"yesterday" = "gisteren";
+
+/* You are not allowed to view recent calls */
+"You are not allowed to view recent calls" = "Je hebt geen toestemming om de recente gesprekken te bekijken";
+
+/* No comment provided by engineer. */
+"You must allow microphone access in Settings > Privacy > Microphone." = "De app heeft toegang nodig tot de microfoon via Instellingen > Privacy > Microfoon.";
+
+/* No comment provided by engineer. */
+"You're not authorized" = "Je bent niet geautoriseerd";
+
+/* No comment provided by engineer. */
+"your account" = "je account";
+
+/* No comment provided by engineer. */
+"Your email and/or password is incorrect." = "Je email adres of wachtwoord is incorrect.";
+
+/* No comment provided by engineer. */
+"Your mobile number should start with your country code e.g. +31 or 0031" = "Het mobiele nummer moet beginnen met een landcode b.v. +31 of 0031";
+
+/* No comment provided by engineer. */
+"Your VoIP account has been registered on another device. You can re-enable VoIP in Settings" = "Je VoIP account is geregistreerd op een ander apparaat. Je kunt VoIP weer activeren bij instellingen";
+
+/* Use encrypted calling */
+"Use encrypted calling" = "Gebruik versleuteld bellen";
+
+/* Use STUN for calling */
+"Use STUN for calling" = "Gebruik STUN om te bellen";
+
+/* Use STUN for calling */
+"Automatically share your app activity with our developers and support team to help resolve issues and errors" = "App activiteit automatisch delen met onze developers en het support team om ze te helpen met het oplossen van problemen";
+
+/* No comment provided by engineer. */
+"Token" = "Token";
+
+/* No comment provided by engineer. */
+"Two-factor authentication" = "Twee-staps verificatie";
+
+/* No comment provided by engineer. */
+"Token invalid" = "Incorrect token";
+
+/* No comment provided by engineer. */
+"The two-factor authentication token is invalid" = "De twee-staps verificatie token is incorrect";
+
+/*  Calls are not encrypted */
+"Calls are not encrypted" = "Gesprekken zijn niet versleuteld";
+
+/* Standard audio */
+"Standard audio" = "Standaard audio";
+
+/* Higher quality audio */
+"Higher quality audio" = "Hogere audio kwaliteit";
+
+/* Low bandwidth */
+"Low bandwidth" = "Lagere bandbreedte";
+
+/* Clearer audio - possible higher bandwidth */
+"Clearer audio - possible higher bandwidth" = "Heldere audio - gebruikt mogelijk meer bandbreedte";
+
+/* Could not save audio settings */
+"Could not save audio settings" = "Kon de audio instellingen niet opslaan";
+
+/* An error occured when saving your changes. Please try again. */
+"An error occured when saving your changes. Please try again." = "Fout opgetreden tijdens het opslaan van de wijzigingen. Probeer het nog eens.";
+
+/* Can't reset password. Make sure you have an internet connection. */
+"Can't reset password. Make sure you have an internet connection." = "Wachtwoord herstellen mislukt. Zorg voor een internetverbinding.";
+
+/* Can't login. Make sure you have an internet connection. */
+"Can't login. Make sure you have an internet connection." = "Inloggen mislukt. Zorg voor een internetverbinding.";
+
+/* Invalid phone number. */
+"Invalid phone number" = "Ongeldig telefoonnummer";
+
+/* It's not possible to setup a call. Make sure you are trying to call a valid number. */
+"It's not possible to setup this call. Please make sure you are trying to call a valid number." = "Het gesprek kan niet worden opgezet. Zorg voor een geldig telefoonnummer.";
+
+/* Missed call */
+"Missed call" = "Gemiste oproep";
+
+/* Anonymous */
+"Anonymous" = "Anoniem";
+
+/* Call settings */
+"Call settings" = "Gespreksinstellingen";
+
+/* Account */
+"Account" = "Account";
+
+/* Advanced call settings */
+"Advanced call settings" = "Geavanceerde gespreksinstellingen";
+
+/* Debug settings */
+"Debug settings" = "Debug Instellingen";
+
+/* Use phone ringtone */
+"Use phone ringtone" = "Gebruik ringtoon van de telefoon";
+
+/* Incoming calls will use the phone's current ringtone. */
+"Incoming calls will use the phone's current ringtone." = "Gebruik jouw ringtoon";
+
+/* Incoming calls will use a special ringtone specific to this application. */
+"Incoming calls will use a special ringtone specific to this application." = "Inkomende oproepen gebruiken een speciaal voor deze applicatie ontwikkelde ringtoon";
